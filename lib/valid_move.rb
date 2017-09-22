@@ -1,5 +1,7 @@
 # code your #valid_move? method here
+require 'pry'
 def valid_move?(board, index)
+  binding.pry
   index.to_i.between?(1,9) && !position_taken?(board, index)
 end
 
